@@ -1,0 +1,629 @@
+img {
+  width: 100%;
+}
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*********************************
+**********************************
+**********************************
+******** HEADER - START *********/
+
+/********* virker også i web *********/
+header {
+  background-color: #f5e8d7;
+  padding: 12px 0px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.4em;
+  /*text-transform: uppercase;*/
+  color: #643939;
+  padding: 0px 12px;
+  /*font-family: pt serif;*/
+  font-family: noto sans;
+  line-height: 60px;
+}
+
+header a:hover {
+  color: #d69f82;
+}
+
+#menu {
+  max-width: 1200px;
+
+  list-style-type: none;
+  padding: 0;
+
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+  transform: translateX(-100%);
+}
+
+/********* burger *********/
+
+#burgermenu {
+  display: inline-block;
+  max-width: 1200px;
+
+  margin: 5px 10px;
+}
+
+#burgermenu img {
+  height: 25px;
+}
+
+nav {
+  position: absolute;
+  align-items: center;
+  z-index: 100;
+  background-color: #f5e8d7;
+  opacity: 85%;
+  width: 100vw;
+}
+
+nav li:first-child {
+  padding-top: 20px;
+}
+
+nav li:last-child {
+  padding-bottom: 20px;
+}
+
+/********* mediaquery *********/
+
+@media (min-width: 1110px) {
+  #burgermenu {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  nav {
+    position: static;
+    background-color: #f5e8d7;
+    opacity: 100%;
+    width: 100%;
+  }
+
+  nav li:first-child {
+    padding-top: 0;
+  }
+
+  nav li:last-child {
+    padding-bottom: 0;
+  }
+
+  header a {
+    font-size: 1em;
+    line-height: normal;
+  }
+}
+
+/******** HEADER - SLUT **********
+**********************************
+**********************************
+**********************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+**********************************
+**********************************
+********* FONTE - START **********/
+
+h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3px;
+  /*font-family: noto sans;*/
+  font-family: pt serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-family: pt serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: pt serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.knapper a {
+  font-family: pt serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.txt p {
+  font-family: pt serif;
+  font-size: 0.8em;
+}
+
+.text p {
+  font-family: noto sans;
+  font-size: 1em;
+}
+
+/********* FONTE - SLUT **********
+**********************************
+**********************************
+**********************************/
+
+/*********************************
+**********************************
+**********************************
+******** GENERELT - START ********/
+
+/**********************************
+*********** ALLE SIDER **********/
+
+/************************
+********* SPLASH ********
+*************************/
+#webdesign,
+#ux,
+#animation,
+#content {
+  background: linear-gradient(90deg, #cda17c 50%, #e8cfb1 50%);
+}
+
+#mig {
+  background-color: #cb936e;
+}
+
+.splash {
+  max-width: 1200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+
+  background-image: url("billeder/splash.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mig .splash {
+  background-image: none;
+}
+
+/************************
+******** KNAPPER ********
+*************************/
+.pil {
+  display: flex;
+  /*align-items: center;*/
+  margin-bottom: 80px;
+  max-width: 1200px;
+}
+
+.pil img,
+.pil_2 img,
+.pil_3 img {
+  width: 52px;
+}
+
+.knapper {
+  max-width: 1200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+.klik {
+  border: 0.08rem solid #393939;
+  width: 300px;
+  text-align: center;
+  padding: 16px 0px 16px;
+  margin-bottom: 5px;
+}
+
+.klik:hover {
+  border: 0.08rem solid #e5ccb9;
+  background-color: #e5ccb9;
+}
+
+.txt {
+  margin-bottom: 25px;
+}
+
+.txt:last-child {
+  margin-bottom: 0px;
+}
+
+/************************
+********** TEMA *********
+*************************/
+
+.pil_2 {
+  display: flex;
+  /*align-items: center;*/
+  margin-bottom: 60px;
+  max-width: 1200px;
+}
+
+#web_tema,
+#ux_tema,
+#ani_tema,
+#con_tema {
+  background-color: #f5e8d7;
+}
+
+/************************
+********** OPG **********
+*************************/
+.pil_3 {
+  display: flex;
+  /*align-items: center;*/
+  margin-bottom: 60px;
+  max-width: 1200px;
+}
+
+#web_opg,
+#ux_opg,
+#ani_opg,
+#con_opg {
+  /*background-color: #D69F82;*/
+  background-color: #e5ccb9;
+}
+
+/************************
+***** TEMA OG OPG *******
+*************************/
+
+.overskrift {
+  max-width: 1200px;
+  padding: 0px 20px 10px;
+  text-align: center;
+}
+
+.text {
+  max-width: 1200px;
+  padding: 0px 20px 60px;
+}
+
+@media (min-width: 1110px) {
+  /****** SPLASH ******/
+  .splash {
+    background-image: url(billeder/splash_com.jpg);
+    max-height: 170px;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  /****** KNAPPER ******/
+  .pil {
+    margin-bottom: 120px;
+  }
+
+  .knapper {
+    margin-bottom: 120px;
+  }
+
+  /****** TEMA ******/
+
+  /****** OPG ******/
+
+  /****** TEMA OG OPG ******/
+  .pil img,
+  .pil_2 img,
+  .pil_3 img {
+    width: 72px;
+  }
+
+  .pil_2,
+  .pil_3 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 600px) {
+  .overskrift {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+  }
+
+  .text {
+    max-width: 600px;
+    padding-bottom: 100px;
+  }
+}
+
+/******** GENERELT - SLUT ********
+**********************************
+**********************************
+*********************************/
+
+/*********************************
+********************************** ********************************** 
+******** FORSIDE - START *********/
+#sectionwrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.forside_baggrund {
+  width: 100%;
+  height: 95vh;
+  position: absolute;
+  background-image: url(billeder/mig_forside_mobil.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.for_overskrift {
+  opacity: 0;
+
+  position: absolute;
+
+  font-size: 34px;
+  color: #ffffff;
+  font-family: pt serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index: 100;
+
+  /*Position*/
+  left: 30px;
+  top: 200px;
+}
+
+.for_overskrift_mobil {
+  opacity: 1;
+
+  position: absolute;
+
+  font-size: 54px;
+  color: #ffffff;
+  font-family: pt serif;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  /*Position*/
+  left: 30px;
+  top: 64px;
+}
+
+.for_txt {
+  position: absolute;
+
+  font-size: 20px;
+  color: #ffffff;
+  font-family: pt serif;
+  z-index: 99;
+
+  /*Position*/
+  left: 30px;
+  top: 120px;
+}
+
+.for_mig {
+  display: none;
+
+  background-image: url(billeder/baggrund_mig.svg);
+  background-size: cover;
+  position: absolute;
+
+  /*Position - den er centreret*/
+
+  /*Størrelse*/
+  height: 95%;
+  width: 95%;
+}
+@media only screen and (min-width: 600px) {
+  .forside_baggrund {
+    background-position: top center;
+    background-image: url(billeder/mig_forside_tablet.svg);
+  }
+
+  .for_overskrift {
+    opacity: 1;
+    font-size: 3rem;
+    left: 5vw;
+    top: 16vw;
+  }
+
+  .for_overskrift_mobil {
+    opacity: 0;
+  }
+
+  .for_txt {
+    font-size: 2rem;
+
+    /*Position*/
+    left: 10.4vw;
+    top: 30vw;
+  }
+
+  .for_mig {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .forside_baggrund {
+    background-position: top center;
+    background-color: #e8cfb1;
+    background-image: none;
+  }
+
+  .for_overskrift {
+    opacity: 1;
+    font-size: 3rem;
+    left: 5vw;
+    top: 16vw;
+  }
+
+  .for_overskrift_mobil {
+    opacity: 0;
+  }
+
+  .for_txt {
+    font-size: 2rem;
+
+    /*Position*/
+    left: 9.4vw;
+    top: 25vw;
+  }
+
+  .for_mig {
+    display: block;
+  }
+}
+
+/******** FORSIDE - SLUT *********
+**********************************
+**********************************
+*********************************/
+
+/*********************************
+********************************** ********************************** 
+********* OM MIG - START *********/
+#om_mig .pil {
+  background-color: #f5e8d7;
+  margin-bottom: 0;
+}
+
+.mig_sectionwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+/****** Billede ******/
+#om_mig .billede {
+  background-color: #f5e8d7;
+}
+
+.billede_mig {
+  padding: 40px 60px;
+}
+
+/****** Tekst ******/
+.mig_overskrift {
+  padding-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mig_txt {
+  font-family: noto sans;
+  padding-bottom: 32px;
+}
+
+.interesser_og_cv {
+  background-color: #efd5c1;
+  margin: 0;
+}
+
+.mig_txt li {
+  list-style-type: square;
+}
+
+.mig_txt li:last-child {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+  #mig .splash {
+    background-image: none;
+  }
+
+  .interesser_og_cv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-basis: 100px;
+
+    background-color: #f5e8d7;
+    padding: 40px 20px 0px 20px;
+    margin: 40px 0px 40px 40px;
+  }
+
+  .mig_overskrift,
+  .mig_txt {
+    flex-grow: 1;
+    flex-basis: 800px;
+  }
+
+  .billede {
+    flex-grow: 1;
+    flex-basis: 100px;
+    background: linear-gradient(90deg, #f5e8d7 60%, #ffffff 60%);
+    margin: 40px 0px;
+    align-items: flex-end;
+  }
+
+  .billede_mig {
+    background: linear-gradient(90deg, #f5e8d7 60%, #ffffff 60%);
+  }
+
+  .billede img {
+    height: 500px;
+    width: 382px;
+  }
+
+  .mig_sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #om_mig .pil_3,
+  #om_mig .pil {
+    display: none;
+  }
+}
+
+/********* OM MIG - SLUT *********
+**********************************
+**********************************
+*********************************/
