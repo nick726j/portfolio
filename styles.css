@@ -63,7 +63,7 @@ header a:hover {
 nav {
   position: absolute;
   align-items: center;
-  z-index: 100;
+  z-index: 9999;
   background-color: #f5e8d7;
   opacity: 85%;
   width: 100vw;
